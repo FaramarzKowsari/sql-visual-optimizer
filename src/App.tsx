@@ -113,6 +113,33 @@ export default function App() {
               </div>
             </section>
 
+            <section className="hero-showcase-section" aria-labelledby="interface-showcase-title">
+              <figure className="hero-showcase">
+                <a
+                  className="hero-showcase-link"
+                  href="./images/sql-visual-optimizer-hero.png"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open the SQL Visual Optimizer interface showcase image"
+                >
+                  <img
+                    src="./images/sql-visual-optimizer-hero.png"
+                    alt="SQL Visual Optimizer interface showcase with SQL editor, AST, logical plan, EXPLAIN JSON, cost heatmap, and index recommendations"
+                    width="1672"
+                    height="941"
+                    fetchPriority="high"
+                  />
+                </a>
+                <figcaption>
+                  <div>
+                    <span className="eyebrow">Interface showcase</span>
+                    <strong id="interface-showcase-title">From SQL text to an inspectable optimization story.</strong>
+                  </div>
+                  <p>Explore the editor, abstract syntax tree, estimated logical plan, imported EXPLAIN JSON, cost signals, and index hypotheses in one browser-first laboratory.</p>
+                </figcaption>
+              </figure>
+            </section>
+
             <section className="workspace-grid">
               <div className="editor-column">
                 <article className="glass-card editor-card">

@@ -1,0 +1,18 @@
+راهنمای نصب به‌روزرسانی تصویر قهرمان
+
+1) فایل ZIP را Extract کنید.
+2) محتویات پوشه استخراج‌شده را داخل ریشه مخزن محلی sql-visual-optimizer کپی کنید.
+3) هنگام پرسش ویندوز، Replace the files in the destination را انتخاب کنید.
+4) ساختار باید این‌گونه باشد:
+   README.md
+   index.html
+   src/App.tsx
+   src/styles.css
+5) در GitHub Desktop چهار فایل تغییرکرده را بررسی کنید.
+6) Summary:
+   Integrate hero image into README and application
+7) Commit to main و سپس Push origin را بزنید.
+8) در Actions منتظر سبزشدن CI و Deploy GitHub Pages بمانید.
+
+تصویر مورد انتظار باید از قبل در این مسیر مخزن موجود باشد:
+public/images/sql-visual-optimizer-hero.png

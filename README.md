@@ -15,6 +15,14 @@
 
 </div>
 
+<p align="center">
+  <a href="https://FaramarzKowsari.github.io/sql-visual-optimizer/" title="Open the live SQL Visual Optimizer laboratory">
+    <img src="public/images/sql-visual-optimizer-hero.png" alt="SQL Visual Optimizer — interactive query planning, cost analysis, AST, EXPLAIN JSON, cost heatmap, and index candidates" width="100%" />
+  </a>
+</p>
+
+<p align="center"><sub>Professional interface showcase · Click the image to open the live application</sub></p>
+
 ---
 
 SQL Visual Optimizer turns SQL performance analysis into an inspectable visual workflow. It parses queries, builds a transparent educational plan, highlights likely cost centers, detects common anti-patterns, proposes index experiments, and visualizes real PostgreSQL-compatible `EXPLAIN (FORMAT JSON)` output.
