@@ -1,0 +1,56 @@
+[
+  {
+    "Plan": {
+      "Node Type": "Limit",
+      "Plan Rows": 20,
+      "Total Cost": 16042.55,
+      "Actual Rows": 20,
+      "Actual Total Time": 84.21,
+      "Plans": [
+        {
+          "Node Type": "Sort",
+          "Plan Rows": 5400,
+          "Total Cost": 16042.5,
+          "Actual Rows": 20,
+          "Actual Total Time": 84.19,
+          "Plans": [
+            {
+              "Node Type": "Hash Join",
+              "Hash Cond": "(o.customer_id = c.id)",
+              "Plan Rows": 5400,
+              "Total Cost": 15800,
+              "Actual Rows": 5172,
+              "Actual Total Time": 76.5,
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Relation Name": "orders",
+                  "Plan Rows": 500000,
+                  "Total Cost": 12000,
+                  "Actual Rows": 5100,
+                  "Actual Total Time": 64,
+                  "Filter": "status = 'completed'"
+                },
+                {
+                  "Node Type": "Hash",
+                  "Plan Rows": 100000,
+                  "Total Cost": 1800,
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Relation Name": "customers",
+                      "Plan Rows": 100000,
+                      "Total Cost": 1800
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Planning Time": 1.02,
+    "Execution Time": 84.89
+  }
+]
