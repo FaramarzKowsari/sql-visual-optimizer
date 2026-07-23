@@ -5,7 +5,7 @@
 
 ### An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21501361.svg)](https://doi.org/10.5281/zenodo.21501361)
+[![DOI](public/images/doi-badge.svg)](https://doi.org/10.5281/zenodo.21501361)
 [![CI](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/ci.yml)
 [![Deploy](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/deploy-pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-45d9e8.svg)](LICENSE)
