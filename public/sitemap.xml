@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://faramarzkowsari.github.io/sql-visual-optimizer/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png</image:loc>
+      <image:title>SQL Visual Optimizer interface showcase</image:title>
+      <image:caption>Interactive SQL query planning, cost analysis, AST, EXPLAIN JSON, cost heatmap, and index-candidate laboratory by Faramarz Kowsari.</image:caption>
+    </image:image>
+  </url>
+</urlset>

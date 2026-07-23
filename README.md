@@ -135,6 +135,12 @@ Read:
 - [Research direction](docs/RESEARCH.md)
 - [Roadmap](docs/ROADMAP.md)
 
+## Archival release and DOI
+
+The repository is prepared for archival through the Zenodo–GitHub integration. Release metadata is defined in [`.zenodo.json`](.zenodo.json), while human- and machine-readable citation guidance is maintained in [`CITATION.cff`](CITATION.cff).
+
+The first archival software release uses the tag `v1.0.0`. After Zenodo processes the GitHub release, the concept DOI and version-specific DOI will be added to this README, the live application, structured metadata, and citation files.
+
 ## Author
 
 **Faramarz Kowsari** is an author, Software Engineer and AI researcher based in Istanbul. Focusing on the intersection of technology, education, and personal growth, he has published over 80 digital titles on international platforms. His areas of expertise span Artificial Intelligence, prompt engineering, modern trading strategies (Smart Money Concepts & algorithmic trading), as well as classical literature and mindfulness. In addition to writing, he develops web-based educational tools and creates specialized instructional video content.
@@ -151,7 +157,7 @@ Read:
 
 ## Citation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff). A future archival research release can be connected to Zenodo after the first tagged GitHub release.
+Citation metadata is available in [`CITATION.cff`](CITATION.cff). Zenodo archival metadata is available in [`.zenodo.json`](.zenodo.json). Once the first release is archived, cite the version-specific Zenodo DOI shown on the release record; use the concept DOI when linking to the evolving software project as a whole.
 
 ## License
 

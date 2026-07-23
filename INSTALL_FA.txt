@@ -1,18 +1,19 @@
-راهنمای نصب به‌روزرسانی تصویر قهرمان
+بسته آماده‌سازی Zenodo و Google Search Console
 
-1) فایل ZIP را Extract کنید.
-2) محتویات پوشه استخراج‌شده را داخل ریشه مخزن محلی sql-visual-optimizer کپی کنید.
-3) هنگام پرسش ویندوز، Replace the files in the destination را انتخاب کنید.
-4) ساختار باید این‌گونه باشد:
-   README.md
-   index.html
-   src/App.tsx
-   src/styles.css
-5) در GitHub Desktop چهار فایل تغییرکرده را بررسی کنید.
-6) Summary:
-   Integrate hero image into README and application
-7) Commit to main و سپس Push origin را بزنید.
-8) در Actions منتظر سبزشدن CI و Deploy GitHub Pages بمانید.
+فایل‌ها را در ریشه مخزن sql-visual-optimizer کپی کنید و Replace را تأیید کنید.
 
-تصویر مورد انتظار باید از قبل در این مسیر مخزن موجود باشد:
-public/images/sql-visual-optimizer-hero.png
+فایل‌های جدید/تغییریافته:
+- .zenodo.json
+- README.md
+- index.html
+- public/sitemap.xml
+- docs/RELEASE_NOTES_v1.0.0.md
+- docs/GOOGLE_SEARCH_CONSOLE_FA.md
+
+Commit پیشنهادی:
+Prepare Zenodo release metadata and Google indexing
+
+Description پیشنهادی:
+Add Zenodo software metadata, structured data, sitemap, release notes, and Google Search Console documentation for the v1.0.0 archival release.
+
+سپس Commit to main و Push origin را بزنید. بعد از سبزشدن CI و Deploy، ابتدا مخزن را در Zenodo فعال و سپس GitHub Release v1.0.0 را منتشر کنید.
