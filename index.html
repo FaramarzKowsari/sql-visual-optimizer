@@ -6,39 +6,49 @@
     <meta name="theme-color" content="#07111f" />
     <meta name="description" content="SQL Visual Optimizer — an interactive browser-first laboratory for SQL parsing, logical plans, EXPLAIN JSON, cost analysis, index hypotheses, and performance education by Faramarz Kowsari." />
     <meta name="author" content="Faramarz Kowsari" />
-    <meta name="keywords" content="SQL optimizer, query optimization, execution plan, PostgreSQL EXPLAIN, AST, database performance, index analysis, TypeScript, data engineering, Faramarz Kowsari" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="keywords" content="SQL Visual Optimizer, SQL optimizer, query optimization, execution plan, PostgreSQL EXPLAIN, AST, database performance, index analysis, TypeScript, data engineering, Faramarz Kowsari" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="citation_title" content="SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory" />
     <meta name="citation_author" content="Faramarz Kowsari" />
     <meta name="citation_publication_date" content="2026-07-22" />
     <meta name="citation_doi" content="10.5281/zenodo.21501361" />
     <link rel="canonical" href="https://faramarzkowsari.github.io/sql-visual-optimizer/" />
 
-    <meta property="og:title" content="SQL Visual Optimizer — Query Planning & Performance Laboratory" />
+    <meta property="og:title" content="SQL Visual Optimizer — Query Planning &amp; Performance Laboratory" />
     <meta property="og:description" content="Visualize SQL syntax trees, estimated logical plans, imported execution plans, index strategies, query costs, and performance bottlenecks in the browser." />
     <meta property="og:image" content="https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png" />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
     <meta property="og:image:alt" content="SQL Visual Optimizer interface showcase by Faramarz Kowsari" />
     <meta property="og:url" content="https://faramarzkowsari.github.io/sql-visual-optimizer/" />
     <meta property="og:site_name" content="SQL Visual Optimizer" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SQL Visual Optimizer" />
     <meta name="twitter:description" content="An interactive query planning, cost analysis, and SQL performance laboratory." />
     <meta name="twitter:image" content="https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png" />
+    <meta name="twitter:image:alt" content="SQL Visual Optimizer interface showcase" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
+        "@type": ["SoftwareApplication", "SoftwareSourceCode"],
+        "@id": "https://faramarzkowsari.github.io/sql-visual-optimizer/#software",
         "name": "SQL Visual Optimizer",
         "alternateName": "SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory",
+        "description": "A browser-first research and educational software application for inspecting SQL structure, visualizing transparent estimated logical plans, importing PostgreSQL-compatible EXPLAIN JSON, detecting common SQL anti-patterns, and exploring index hypotheses.",
         "applicationCategory": "DeveloperApplication",
+        "programmingLanguage": ["TypeScript", "Rust", "WebAssembly"],
         "operatingSystem": "Any modern web browser",
         "softwareVersion": "1.0.0",
+        "datePublished": "2026-07-22",
+        "dateModified": "2026-07-23",
         "isAccessibleForFree": true,
         "license": "https://opensource.org/licenses/MIT",
         "url": "https://faramarzkowsari.github.io/sql-visual-optimizer/",
+        "mainEntityOfPage": "https://faramarzkowsari.github.io/sql-visual-optimizer/",
         "codeRepository": "https://github.com/FaramarzKowsari/sql-visual-optimizer",
         "downloadUrl": "https://doi.org/10.5281/zenodo.21501361",
         "citation": "https://doi.org/10.5281/zenodo.21501361",
@@ -49,14 +59,33 @@
           "url": "https://doi.org/10.5281/zenodo.21501361"
         },
         "image": "https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png",
+        "featureList": [
+          "SQL parsing for PostgreSQL, MySQL, SQLite, and T-SQL",
+          "Abstract syntax tree inspection",
+          "Transparent estimated logical-plan visualization",
+          "PostgreSQL-compatible EXPLAIN JSON import",
+          "SQL anti-pattern detection",
+          "Exploratory index hypotheses",
+          "Optional Gemini BYOK explanation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/OnlineOnly"
+        },
         "author": {
           "@type": "Person",
+          "@id": "https://faramarzkowsari.github.io/#person",
           "name": "Faramarz Kowsari",
-          "url": "https://faramarzkowsari.github.io",
+          "url": "https://faramarzkowsari.github.io/",
           "sameAs": [
             "https://orcid.org/0000-0003-1692-0453",
             "https://github.com/FaramarzKowsari",
-            "https://www.linkedin.com/in/faramarzkowsari"
+            "https://www.linkedin.com/in/faramarzkowsari",
+            "https://scholar.google.com/citations?user=G7tP5WMAAAAJ&hl=en",
+            "https://play.google.com/store/search?q=Faramarz_Kowsari&c=books",
+            "https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22"
           ]
         },
         "sameAs": [
@@ -67,6 +96,7 @@
     </script>
 
     <link rel="preload" as="image" href="%BASE_URL%images/sql-visual-optimizer-hero.png" fetchpriority="high" />
+    <link rel="alternate" type="text/plain" href="%BASE_URL%llms.txt" title="SQL Visual Optimizer project summary" />
     <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="%BASE_URL%site.webmanifest" />
     <title>SQL Visual Optimizer — Faramarz Kowsari</title>

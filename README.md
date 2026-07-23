@@ -32,6 +32,16 @@ SQL Visual Optimizer turns SQL performance analysis into an inspectable visual w
 
 The public application runs as static files on GitHub Pages. It requires **no project-owned server, database, paid API, or embedded credential**.
 
+## Canonical project links
+
+Use the following descriptive links when referencing this project from websites, academic profiles, books, or social posts:
+
+- [SQL Visual Optimizer — Interactive Query Planning and Performance Laboratory](https://faramarzkowsari.github.io/sql-visual-optimizer/)
+- [SQL Visual Optimizer source code and technical documentation](https://github.com/FaramarzKowsari/sql-visual-optimizer)
+- [SQL Visual Optimizer v1.0.0 archived software release on Zenodo](https://doi.org/10.5281/zenodo.21501361)
+
+Avoid generic anchor text such as “Click here.” Consistent descriptive titles help readers and search systems understand the destination before opening it.
+
 ## What it can do
 
 - parse PostgreSQL, MySQL, SQLite, and T-SQL syntax;
@@ -106,6 +116,7 @@ sql-visual-optimizer/
 ├── examples/                # SQL and EXPLAIN fixtures
 ├── benchmarks/              # reproducibility requirements
 ├── docs/                    # architecture, methodology, research, roadmap
+├── public/llms.txt          # concise machine-readable project summary
 └── .github/workflows/       # CI and Pages deployment
 ```
 
@@ -119,6 +130,7 @@ Read:
 - [Methodology and limitations](docs/METHODOLOGY.md)
 - [Research direction](docs/RESEARCH.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Discoverability and backlink guide](docs/DISCOVERABILITY_AND_BACKLINKS.md)
 
 ## Author
 

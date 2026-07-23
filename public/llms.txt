@@ -1,0 +1,21 @@
+# SQL Visual Optimizer
+
+> SQL Visual Optimizer — Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory.
+
+SQL Visual Optimizer is a browser-first research and educational software application created by Faramarz Kowsari. It parses SQL, displays abstract syntax trees, creates transparent estimated logical plans, imports PostgreSQL-compatible EXPLAIN JSON, identifies common SQL anti-patterns, and proposes exploratory index hypotheses.
+
+## Canonical links
+
+- Live application: https://faramarzkowsari.github.io/sql-visual-optimizer/
+- Source repository: https://github.com/FaramarzKowsari/sql-visual-optimizer
+- Archived software release DOI: https://doi.org/10.5281/zenodo.21501361
+- Author ORCID: https://orcid.org/0000-0003-1692-0453
+- Author website: https://faramarzkowsari.github.io/
+
+## Important evidence distinction
+
+- Estimated Plan: a transparent browser-side educational model.
+- Imported Real Plan: execution-plan JSON created by a database engine.
+- AI Explanation: optional interpretation using a visitor-provided Gemini API key.
+
+The project is MIT licensed and the deterministic analyzer works without a paid API or embedded credential.
