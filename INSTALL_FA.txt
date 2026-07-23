@@ -1,19 +1,15 @@
-بسته آماده‌سازی Zenodo و Google Search Console
+SQL VISUAL OPTIMIZER — DOI UPDATE
 
-فایل‌ها را در ریشه مخزن sql-visual-optimizer کپی کنید و Replace را تأیید کنید.
-
-فایل‌های جدید/تغییریافته:
-- .zenodo.json
-- README.md
-- index.html
-- public/sitemap.xml
-- docs/RELEASE_NOTES_v1.0.0.md
-- docs/GOOGLE_SEARCH_CONSOLE_FA.md
-
-Commit پیشنهادی:
-Prepare Zenodo release metadata and Google indexing
-
-Description پیشنهادی:
-Add Zenodo software metadata, structured data, sitemap, release notes, and Google Search Console documentation for the v1.0.0 archival release.
-
-سپس Commit to main و Push origin را بزنید. بعد از سبزشدن CI و Deploy، ابتدا مخزن را در Zenodo فعال و سپس GitHub Release v1.0.0 را منتشر کنید.
+1) پوشه ZIP را Extract کنید.
+2) همه فایل‌ها و پوشه‌های داخل آن را در ریشه مخزن محلی sql-visual-optimizer کپی کنید.
+3) گزینه Replace the files in the destination را انتخاب کنید.
+4) فایل APPLY_APP_DIO_PATCH_FA.md را باز کنید و دو تغییر کوچک App.tsx را انجام دهید.
+5) در GitHub Desktop این Commit را بسازید:
+   Add Zenodo DOI and scholarly metadata
+6) سپس Push origin را بزنید.
+7) صبر کنید CI و Deploy GitHub Pages سبز شوند.
+8) آدرس‌های زیر را آزمایش کنید:
+   https://faramarzkowsari.github.io/sql-visual-optimizer/
+   https://faramarzkowsari.github.io/sql-visual-optimizer/sitemap.xml
+   https://faramarzkowsari.github.io/sql-visual-optimizer/robots.txt
+9) در Google Search Console فایل sitemap را ثبت و Request indexing را اجرا کنید.

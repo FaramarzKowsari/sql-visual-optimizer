@@ -105,6 +105,17 @@ export default function App() {
                 <span className="eyebrow hero-eyebrow"><Sparkles size={16} /> 100% browser-first • no paid API required</span>
                 <h1>See what your SQL is asking the database to do.</h1>
                 <p>Parse a query, inspect its logical plan, model likely cost centers, surface optimization hypotheses, and compare the estimate with real PostgreSQL EXPLAIN JSON.</p>
+<div className="button-row">
+  <a
+    className="secondary-button"
+    href="https://doi.org/10.5281/zenodo.21501361"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <ShieldCheck size={17} />
+    DOI 10.5281/zenodo.21501361
+  </a>
+</div>
               </div>
               <div className="trust-stack">
                 <span><ShieldCheck size={18} /> Queries stay in your browser</span>
@@ -228,6 +239,13 @@ export default function App() {
           <a href="https://FaramarzKowsari.github.io" target="_blank" rel="noreferrer">Official Website</a>
           <a href="https://orcid.org/0000-0003-1692-0453" target="_blank" rel="noreferrer">ORCID</a>
           <a href="https://github.com/FaramarzKowsari" target="_blank" rel="noreferrer">GitHub</a>
+<a
+  href="https://doi.org/10.5281/zenodo.21501361"
+  target="_blank"
+  rel="noreferrer"
+>
+  Software DOI
+</a>
         </div>
       </footer>
     </div>

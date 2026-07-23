@@ -1,6 +1,7 @@
 import { BookOpen, ExternalLink, Github, GraduationCap, Linkedin, Orbit, ServerCog } from 'lucide-react';
 
 const links = [
+  { label: 'Software DOI', url: 'https://doi.org/10.5281/zenodo.21501361', icon: ExternalLink },
   { label: 'ORCID', url: 'https://orcid.org/0000-0003-1692-0453', icon: Orbit },
   { label: 'Google Scholar', url: 'https://scholar.google.com/citations?user=G7tP5WMAAAAJ&hl=en', icon: GraduationCap },
   { label: 'GitHub', url: 'https://github.com/FaramarzKowsari', icon: Github },
@@ -37,6 +38,7 @@ export function About() {
           <article><b>AI explanation</b><p>An optional interpretation generated with the visitor’s own Gemini key, never presented as database evidence.</p></article>
         </div>
         <p className="ethics-note">The project deliberately avoids fake precision. Every estimate is labeled, every recommendation is framed as a hypothesis, and real execution plans remain the source of truth.</p>
+        <p className="ethics-note">Archived research-software release: <a href="https://doi.org/10.5281/zenodo.21501361" target="_blank" rel="noreferrer">DOI 10.5281/zenodo.21501361</a>.</p>
       </section>
     </div>
   );

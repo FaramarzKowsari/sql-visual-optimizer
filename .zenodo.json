@@ -38,7 +38,12 @@
       "identifier": "https://faramarzkowsari.github.io/sql-visual-optimizer/",
       "relation": "isDocumentedBy",
       "resource_type": "other"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.21501361",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
     }
   ],
-  "notes": "Version 1.0.0 is the initial public research-software release. The live application is deployed on GitHub Pages and the source code is licensed under MIT."
+  "notes": "Version 1.0.0 is the initial public research-software release. Archived version DOI: 10.5281/zenodo.21501361. The live application is deployed on GitHub Pages and the source code is licensed under MIT."
 }

@@ -4,8 +4,28 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A browser-based SQL optimization laboratory that visualizes query plans, costs, indexes, and performance bottlenecks.",
-  "author": "Faramarz Kowsari",
+  "author": {
+    "name": "Faramarz Kowsari",
+    "url": "https://faramarzkowsari.github.io"
+  },
   "license": "MIT",
+  "homepage": "https://faramarzkowsari.github.io/sql-visual-optimizer/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FaramarzKowsari/sql-visual-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FaramarzKowsari/sql-visual-optimizer/issues"
+  },
+  "keywords": [
+    "sql",
+    "query-optimization",
+    "execution-plan",
+    "postgresql",
+    "database-performance",
+    "data-engineering",
+    "typescript"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

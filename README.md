@@ -5,6 +5,7 @@
 
 ### An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21501361.svg)](https://doi.org/10.5281/zenodo.21501361)
 [![CI](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/ci.yml)
 [![Deploy](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/FaramarzKowsari/sql-visual-optimizer/actions/workflows/deploy-pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-45d9e8.svg)](LICENSE)
@@ -12,6 +13,8 @@
 [![Rust/WASM](https://img.shields.io/badge/Rust%2FWASM-experimental-b7410e)](crates/query-math)
 
 **Live application:** `https://FaramarzKowsari.github.io/sql-visual-optimizer/`
+
+**Archived release:** `https://doi.org/10.5281/zenodo.21501361`
 
 </div>
 
@@ -73,24 +76,6 @@ npm run build
 npm run preview
 ```
 
-## Publish with GitHub Desktop
-
-1. Create a new public repository named `sql-visual-optimizer` under `FaramarzKowsari`.
-2. Extract or copy this project into the repository's local folder.
-3. In GitHub Desktop, review the file list.
-4. Commit with: `Initial release: browser-based SQL optimization laboratory`
-5. Click **Publish repository** or **Push origin**.
-6. Open the repository on GitHub.
-7. Go to **Settings → Pages**.
-8. Under **Build and deployment**, choose **GitHub Actions**.
-9. The included deployment workflow will publish the static application.
-
-Expected URL:
-
-```text
-https://FaramarzKowsari.github.io/sql-visual-optimizer/
-```
-
 ## Optional Gemini BYOK mode
 
 The deterministic analyzer works without Gemini. Visitors may paste their own Gemini API key to request a natural-language performance explanation.
@@ -135,12 +120,6 @@ Read:
 - [Research direction](docs/RESEARCH.md)
 - [Roadmap](docs/ROADMAP.md)
 
-## Archival release and DOI
-
-The repository is prepared for archival through the Zenodo–GitHub integration. Release metadata is defined in [`.zenodo.json`](.zenodo.json), while human- and machine-readable citation guidance is maintained in [`CITATION.cff`](CITATION.cff).
-
-The first archival software release uses the tag `v1.0.0`. After Zenodo processes the GitHub release, the concept DOI and version-specific DOI will be added to this README, the live application, structured metadata, and citation files.
-
 ## Author
 
 **Faramarz Kowsari** is an author, Software Engineer and AI researcher based in Istanbul. Focusing on the intersection of technology, education, and personal growth, he has published over 80 digital titles on international platforms. His areas of expertise span Artificial Intelligence, prompt engineering, modern trading strategies (Smart Money Concepts & algorithmic trading), as well as classical literature and mindfulness. In addition to writing, he develops web-based educational tools and creates specialized instructional video content.
@@ -154,10 +133,15 @@ The first archival software release uses the tag `v1.0.0`. After Zenodo processe
 - Google Books: https://play.google.com/store/search?q=Faramarz_Kowsari&c=books
 - Official Website: https://FaramarzKowsari.github.io
 - Zenodo Records: https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22&l=list&p=1&s=10&sort=bestmatch
+- Software DOI: https://doi.org/10.5281/zenodo.21501361
 
 ## Citation
 
-Citation metadata is available in [`CITATION.cff`](CITATION.cff). Zenodo archival metadata is available in [`.zenodo.json`](.zenodo.json). Once the first release is archived, cite the version-specific Zenodo DOI shown on the release record; use the concept DOI when linking to the evolving software project as a whole.
+Please cite the archived `v1.0.0` software release as:
+
+> Kowsari, F. (2026). *SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21501361
+
+Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
 
 ## License
 

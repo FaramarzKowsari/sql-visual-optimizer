@@ -4,6 +4,11 @@
 
 SQL Visual Optimizer is a browser-first laboratory for making SQL query structure and performance reasoning inspectable. It combines deterministic analysis, transparent educational estimates, imported database evidence, and optional user-supplied AI explanation.
 
+## DOI and archival record
+
+- Version DOI: https://doi.org/10.5281/zenodo.21501361
+- Zenodo record: https://zenodo.org/records/21501361
+
 ## Highlights
 
 - PostgreSQL, MySQL, SQLite, and T-SQL parsing
@@ -17,7 +22,7 @@ SQL Visual Optimizer is a browser-first laboratory for making SQL query structur
 - optional Gemini BYOK explanation
 - browser-first static deployment with no project-owned paid API
 - automated CI, testing, and GitHub Pages deployment
-- MIT license, `CITATION.cff`, and Zenodo-ready metadata
+- MIT license, `CITATION.cff`, and Zenodo archival metadata
 
 ## Scientific-integrity note
 
@@ -36,6 +41,10 @@ https://github.com/FaramarzKowsari/sql-visual-optimizer
 Faramarz Kowsari — Author, Software Engineer, and AI Researcher
 
 ORCID: https://orcid.org/0000-0003-1692-0453
+
+## Citation
+
+Kowsari, F. (2026). *SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21501361
 
 ## License
 
