@@ -1,6 +1,6 @@
 import {
   Activity,
-  BookOpen,
+ BookOpen as GuidebookIcon,
   Braces,
   CheckCircle2,
   Code2,
@@ -94,7 +94,7 @@ export default function App() {
         <nav className="main-nav" aria-label="Primary navigation">
           <button className={tab === 'analyze' ? 'active' : ''} onClick={() => setTab('analyze')}><Code2 size={17} /> Analyze</button>
           <button className={tab === 'import' ? 'active' : ''} onClick={() => setTab('import')}><FileJson size={17} /> Import Plan</button>
-          <button className={tab === 'guidebook' ? 'active' : ''} onClick={() => setTab('guidebook')}><BookOpen size={17} /> Guidebook</button>
+          <button className={tab === 'guidebook' ? 'active' : ''} onClick={() => setTab('guidebook')}><GuidebookIcon size={17} /> Guidebook</button>
           <button className={tab === 'about' ? 'active' : ''} onClick={() => setTab('about')}><Info size={17} /> About</button>
         </nav>
         <a className="github-button" href="https://github.com/FaramarzKowsari/sql-visual-optimizer" target="_blank" rel="noreferrer"><Github size={18} /> GitHub</a>
@@ -114,8 +114,8 @@ export default function App() {
                     DOI 10.5281/zenodo.21501361
                   </a>
                   <button className="secondary-button" onClick={() => setTab('guidebook')}>
-                    <BookOpen size={17} />
-                    Open infographic guidebook
+                    <GuidebookIcon size={17} />
+		    Open infographic guidebook
                   </button>
                 </div>
               </div>
