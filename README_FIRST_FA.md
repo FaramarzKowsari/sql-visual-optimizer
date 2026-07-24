@@ -1,22 +1,25 @@
-# راهنمای اعمال اصلاح Badge DOI
+# راهنمای رفع خطای ImportMeta.env
 
-این بسته دو فایل دارد:
+این بسته خطای زیر را رفع می‌کند:
 
-- `README.md`
-- `public/images/doi-badge.svg`
+Property 'env' does not exist on type 'ImportMeta'
 
-## روش نصب
+## فایل‌های بسته
+
+- `src/vite-env.d.ts`
+- `tsconfig.app.json`
+
+## نصب
 
 1. محتویات بسته را در ریشه مخزن محلی `sql-visual-optimizer` کپی کنید.
-2. هنگام سؤال ویندوز، گزینه **Replace the files in the destination** را بزنید.
-3. در GitHub Desktop باید این دو تغییر را ببینید:
-   - README.md
-   - public/images/doi-badge.svg
+2. هنگام سؤال ویندوز، گزینه `Replace the files in the destination` را بزنید.
+3. در GitHub Desktop باید این تغییرات دیده شوند:
+   - `src/vite-env.d.ts` (فایل جدید)
+   - `tsconfig.app.json` (فایل اصلاح‌شده)
 4. Summary:
-   `Fix DOI badge with repository-hosted SVG`
+   `Add Vite environment type declarations`
 5. Commit to main
 6. Push origin
 
-Badge جدید از داخل خود مخزن بارگیری می‌شود و دیگر به endpoint تصویری Zenodo وابسته نیست.
-لینک روی Badge همچنان DOI رسمی را باز می‌کند:
-https://doi.org/10.5281/zenodo.21501361
+بعد از Push، CI و Deploy GitHub Pages به صورت خودکار دوباره اجرا می‌شوند.
+اجرای قرمز قبلی را Re-run نکنید.
