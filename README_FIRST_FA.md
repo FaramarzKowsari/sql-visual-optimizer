@@ -1,44 +1,89 @@
-# راهنمای ساخت Release نسخه 1.1.0 و دریافت DOI جدید
+# بسته اصلاح DOI نسخه 1.1.0
 
-## 1. نصب فایل‌ها
+DOI جدید و رسمی:
 
-محتویات این بسته را در ریشه مخزن محلی `sql-visual-optimizer` کپی کنید و فایل‌های موجود را Replace کنید.
+```text
+10.5281/zenodo.21522569
+```
 
-فایل‌های تغییرکرده:
-- `.zenodo.json`
-- `CITATION.cff`
-- `package.json`
+DOI قبلی نسخه 1.0.0 که باید در تاریخچه حفظ شود:
 
-فایل جدید:
-- `docs/RELEASE_NOTES_v1.1.0.md`
+```text
+10.5281/zenodo.21501361
+```
 
-## 2. Commit
+## روش استفاده
+
+1. فایل ZIP را Extract کنید.
+2. روی فایل زیر دوبار کلیک کنید:
+
+```text
+APPLY_DOI_UPDATE.bat
+```
+
+3. ابزار ابتدا این مسیر پیش‌فرض را بررسی می‌کند:
+
+```text
+Documents\GitHub\sql-visual-optimizer
+```
+
+اگر مخزن در جای دیگری باشد، مسیر کامل پوشه را از شما می‌پرسد.
+
+4. ابزار قبل از هر تغییری یک نسخه پشتیبان خارج از مخزن و داخل پوشه موقت ویندوز می‌سازد:
+
+```text
+%TEMP%\sql-visual-optimizer-doi-backup-YYYYMMDD-HHMMSS
+```
+
+این پوشه وارد Commit نخواهد شد.
+
+5. DOI جدید در فایل‌های زیر ثبت می‌شود:
+
+```text
+README.md
+.zenodo.json
+CITATION.cff
+index.html
+src/App.tsx
+src/components/About.tsx
+public/guidebook/index.html
+public/images/doi-badge.svg
+public/llms.txt
+docs/GUIDEBOOK.md
+docs/RELEASE_NOTES_v1.1.0.md
+```
+
+6. در پایان، ابزار این فرمان‌ها را اجرا می‌کند:
+
+```text
+npm run test
+npm run build
+```
+
+## Commit در GitHub Desktop
 
 Summary:
-`Prepare v1.1.0 guidebook release metadata`
+
+```text
+Register Zenodo v1.1.0 DOI across the project
+```
 
 Description:
-`Update software, citation, and Zenodo metadata for the official infographic guidebook release.`
+
+```text
+Add the Zenodo v1.1.0 DOI to citation metadata, the application, README, guidebook, structured data, release notes, and machine-readable project files while preserving the v1.0.0 DOI in version history.
+```
 
 سپس:
-- Commit to main
-- Push origin
-- صبر کنید CI و Deploy GitHub Pages سبز شوند.
 
-## 3. ساخت GitHub Release
+```text
+Commit to main
+Push origin
+```
 
-- Tag: `v1.1.0`
-- Target: `main`
-- Title: `SQL Visual Optimizer v1.1.0 — Official Infographic Guidebook Release`
-- Description: تمام محتوای `docs/RELEASE_NOTES_v1.1.0.md`
-- Set as latest release: روشن
-- Pre-release: خاموش
-- Publish release
+بعد از Push منتظر بمانید هر دو Workflow سبز شوند:
 
-## 4. دریافت DOI
-
-پس از پردازش Zenodo، یک Version DOI جدید برای v1.1.0 ظاهر می‌شود.
-شماره DOI جدید یا تصویر صفحه Zenodo را برای مرحله نهایی درج DOI در تمام فایل‌ها ارسال کنید.
-
-DOI نسخه v1.0.0 را حذف یا بازنویسی نکنید:
-`10.5281/zenodo.21501361`
+```text
+CI
+Deploy GitHub Pages
+```
