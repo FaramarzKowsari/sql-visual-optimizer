@@ -8,9 +8,15 @@ SQL Visual Optimizer is a browser-first research and educational software applic
 
 - Live application: https://faramarzkowsari.github.io/sql-visual-optimizer/
 - Source repository: https://github.com/FaramarzKowsari/sql-visual-optimizer
+- Infographic guidebook page: https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/
+- Infographic guidebook PDF: https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/inside-sql-visual-optimizer.pdf
 - Archived software release DOI: https://doi.org/10.5281/zenodo.21501361
 - Author ORCID: https://orcid.org/0000-0003-1692-0453
 - Author website: https://faramarzkowsari.github.io/
+
+## Official guidebook
+
+Inside SQL Visual Optimizer: A Visual Guide to Query Planning, Cost Analysis, and SQL Performance is a ten-page English infographic booklet covering the repository overview, features, workflow, interface, architecture, deterministic analyzer, privacy and BYOK AI, deployment, research value, citation, and author information.
 
 ## Important evidence distinction
 

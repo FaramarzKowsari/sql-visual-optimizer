@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#07111f" />
-    <meta name="description" content="SQL Visual Optimizer — an interactive browser-first laboratory for SQL parsing, logical plans, EXPLAIN JSON, cost analysis, index hypotheses, and performance education by Faramarz Kowsari." />
+    <meta name="description" content="SQL Visual Optimizer — an interactive browser-first laboratory for SQL parsing, logical plans, EXPLAIN JSON, cost analysis, index hypotheses, performance education, and the Inside SQL Visual Optimizer infographic guidebook by Faramarz Kowsari." />
     <meta name="author" content="Faramarz Kowsari" />
-    <meta name="keywords" content="SQL Visual Optimizer, SQL optimizer, query optimization, execution plan, PostgreSQL EXPLAIN, AST, database performance, index analysis, TypeScript, data engineering, Faramarz Kowsari" />
+    <meta name="keywords" content="SQL Visual Optimizer, Inside SQL Visual Optimizer, SQL guidebook, SQL optimizer, query optimization, execution plan, PostgreSQL EXPLAIN, AST, database performance, index analysis, TypeScript, data engineering, Faramarz Kowsari" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="citation_title" content="SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory" />
     <meta name="citation_author" content="Faramarz Kowsari" />
     <meta name="citation_publication_date" content="2026-07-22" />
     <meta name="citation_doi" content="10.5281/zenodo.21501361" />
     <link rel="canonical" href="https://faramarzkowsari.github.io/sql-visual-optimizer/" />
+    <link rel="alternate" type="application/pdf" title="Inside SQL Visual Optimizer — Infographic Guidebook" href="%BASE_URL%guidebook/inside-sql-visual-optimizer.pdf" />
 
     <meta property="og:title" content="SQL Visual Optimizer — Query Planning &amp; Performance Laboratory" />
-    <meta property="og:description" content="Visualize SQL syntax trees, estimated logical plans, imported execution plans, index strategies, query costs, and performance bottlenecks in the browser." />
+    <meta property="og:description" content="Visualize SQL syntax trees, estimated logical plans, imported execution plans, index strategies, query costs, performance bottlenecks, and explore the official infographic guidebook." />
     <meta property="og:image" content="https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png" />
     <meta property="og:image:width" content="1672" />
     <meta property="og:image:height" content="941" />
@@ -27,7 +28,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="SQL Visual Optimizer" />
-    <meta name="twitter:description" content="An interactive query planning, cost analysis, and SQL performance laboratory." />
+    <meta name="twitter:description" content="An interactive query planning, cost analysis, and SQL performance laboratory with a ten-page infographic guidebook." />
     <meta name="twitter:image" content="https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png" />
     <meta name="twitter:image:alt" content="SQL Visual Optimizer interface showcase" />
 
@@ -59,6 +60,9 @@
           "url": "https://doi.org/10.5281/zenodo.21501361"
         },
         "image": "https://faramarzkowsari.github.io/sql-visual-optimizer/images/sql-visual-optimizer-hero.png",
+        "hasPart": {
+          "@id": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/#guidebook"
+        },
         "featureList": [
           "SQL parsing for PostgreSQL, MySQL, SQLite, and T-SQL",
           "Abstract syntax tree inspection",
@@ -66,7 +70,8 @@
           "PostgreSQL-compatible EXPLAIN JSON import",
           "SQL anti-pattern detection",
           "Exploratory index hypotheses",
-          "Optional Gemini BYOK explanation"
+          "Optional Gemini BYOK explanation",
+          "Official ten-page infographic project guidebook"
         ],
         "offers": {
           "@type": "Offer",
@@ -90,8 +95,45 @@
         },
         "sameAs": [
           "https://github.com/FaramarzKowsari/sql-visual-optimizer",
-          "https://doi.org/10.5281/zenodo.21501361"
+          "https://doi.org/10.5281/zenodo.21501361",
+          "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/"
         ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["Book", "DigitalDocument"],
+        "@id": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/#guidebook",
+        "name": "Inside SQL Visual Optimizer",
+        "headline": "Inside SQL Visual Optimizer: A Visual Guide to Query Planning, Cost Analysis, and SQL Performance",
+        "description": "A ten-page English infographic guidebook explaining the SQL Visual Optimizer GitHub repository, interface, architecture, analyzer, privacy model, deployment, research value, and citation information.",
+        "inLanguage": "en",
+        "numberOfPages": 10,
+        "bookFormat": "https://schema.org/EBook",
+        "isAccessibleForFree": true,
+        "url": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/",
+        "mainEntityOfPage": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/",
+        "encoding": {
+          "@type": "MediaObject",
+          "encodingFormat": "application/pdf",
+          "contentUrl": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/inside-sql-visual-optimizer.pdf"
+        },
+        "image": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/inside-sql-visual-optimizer-cover.jpg",
+        "isPartOf": {
+          "@id": "https://faramarzkowsari.github.io/sql-visual-optimizer/#software"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://faramarzkowsari.github.io/#person",
+          "name": "Faramarz Kowsari"
+        },
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://faramarzkowsari.github.io/#person",
+          "name": "Faramarz Kowsari"
+        }
       }
     </script>
 

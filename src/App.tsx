@@ -1,5 +1,6 @@
 import {
   Activity,
+  BookOpen,
   Braces,
   CheckCircle2,
   Code2,
@@ -22,6 +23,7 @@ import { About } from './components/About';
 import { AiExplainer } from './components/AiExplainer';
 import { ExplainImporter } from './components/ExplainImporter';
 import { FindingsPanel } from './components/FindingsPanel';
+import { Guidebook } from './components/Guidebook';
 import { PlanTree } from './components/PlanTree';
 import { SchemaEditor } from './components/SchemaEditor';
 import { initialSample, samples } from './data/samples';
@@ -35,7 +37,7 @@ const dialectFormatterMap: Record<Dialect, 'postgresql' | 'mysql' | 'sqlite' | '
   transactsql: 'transactsql',
 };
 
-type Tab = 'analyze' | 'import' | 'about';
+type Tab = 'analyze' | 'import' | 'guidebook' | 'about';
 type ResultTab = 'plan' | 'findings' | 'ast' | 'ai';
 
 function MetricCard({ icon: Icon, label, value, detail }: { icon: typeof Gauge; label: string; value: string; detail: string }) {
@@ -92,6 +94,7 @@ export default function App() {
         <nav className="main-nav" aria-label="Primary navigation">
           <button className={tab === 'analyze' ? 'active' : ''} onClick={() => setTab('analyze')}><Code2 size={17} /> Analyze</button>
           <button className={tab === 'import' ? 'active' : ''} onClick={() => setTab('import')}><FileJson size={17} /> Import Plan</button>
+          <button className={tab === 'guidebook' ? 'active' : ''} onClick={() => setTab('guidebook')}><BookOpen size={17} /> Guidebook</button>
           <button className={tab === 'about' ? 'active' : ''} onClick={() => setTab('about')}><Info size={17} /> About</button>
         </nav>
         <a className="github-button" href="https://github.com/FaramarzKowsari/sql-visual-optimizer" target="_blank" rel="noreferrer"><Github size={18} /> GitHub</a>
@@ -105,17 +108,16 @@ export default function App() {
                 <span className="eyebrow hero-eyebrow"><Sparkles size={16} /> 100% browser-first • no paid API required</span>
                 <h1>See what your SQL is asking the database to do.</h1>
                 <p>Parse a query, inspect its logical plan, model likely cost centers, surface optimization hypotheses, and compare the estimate with real PostgreSQL EXPLAIN JSON.</p>
-<div className="button-row">
-  <a
-    className="secondary-button"
-    href="https://doi.org/10.5281/zenodo.21501361"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <ShieldCheck size={17} />
-    DOI 10.5281/zenodo.21501361
-  </a>
-</div>
+                <div className="button-row">
+                  <a className="secondary-button" href="https://doi.org/10.5281/zenodo.21501361" target="_blank" rel="noreferrer">
+                    <ShieldCheck size={17} />
+                    DOI 10.5281/zenodo.21501361
+                  </a>
+                  <button className="secondary-button" onClick={() => setTab('guidebook')}>
+                    <BookOpen size={17} />
+                    Open infographic guidebook
+                  </button>
+                </div>
               </div>
               <div className="trust-stack">
                 <span><ShieldCheck size={18} /> Queries stay in your browser</span>
@@ -126,20 +128,8 @@ export default function App() {
 
             <section className="hero-showcase-section" aria-labelledby="interface-showcase-title">
               <figure className="hero-showcase">
-                <a
-                  className="hero-showcase-link"
-                  href="./images/sql-visual-optimizer-hero.png"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Open the SQL Visual Optimizer interface showcase image"
-                >
-                  <img
-                    src="./images/sql-visual-optimizer-hero.png"
-                    alt="SQL Visual Optimizer interface showcase with SQL editor, AST, logical plan, EXPLAIN JSON, cost heatmap, and index recommendations"
-                    width="1672"
-                    height="941"
-                    fetchPriority="high"
-                  />
+                <a className="hero-showcase-link" href="./images/sql-visual-optimizer-hero.png" target="_blank" rel="noreferrer" aria-label="Open the SQL Visual Optimizer interface showcase image">
+                  <img src="./images/sql-visual-optimizer-hero.png" alt="SQL Visual Optimizer interface showcase with SQL editor, AST, logical plan, EXPLAIN JSON, cost heatmap, and index recommendations" width="1672" height="941" fetchPriority="high" />
                 </a>
                 <figcaption>
                   <div>
@@ -230,6 +220,7 @@ export default function App() {
         )}
 
         {tab === 'import' && <ExplainImporter />}
+        {tab === 'guidebook' && <Guidebook />}
         {tab === 'about' && <About />}
       </main>
 
@@ -239,13 +230,8 @@ export default function App() {
           <a href="https://FaramarzKowsari.github.io" target="_blank" rel="noreferrer">Official Website</a>
           <a href="https://orcid.org/0000-0003-1692-0453" target="_blank" rel="noreferrer">ORCID</a>
           <a href="https://github.com/FaramarzKowsari" target="_blank" rel="noreferrer">GitHub</a>
-<a
-  href="https://doi.org/10.5281/zenodo.21501361"
-  target="_blank"
-  rel="noreferrer"
->
-  Software DOI
-</a>
+          <a href={`${import.meta.env.BASE_URL}guidebook/`} target="_blank" rel="noreferrer">Guidebook</a>
+          <a href="https://doi.org/10.5281/zenodo.21501361" target="_blank" rel="noreferrer">Software DOI</a>
         </div>
       </footer>
     </div>

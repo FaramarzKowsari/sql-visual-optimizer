@@ -16,6 +16,8 @@
 
 **Archived release:** `https://doi.org/10.5281/zenodo.21501361`
 
+**Infographic guidebook:** `https://FaramarzKowsari.github.io/sql-visual-optimizer/guidebook/`
+
 </div>
 
 <p align="center">
@@ -32,12 +34,40 @@ SQL Visual Optimizer turns SQL performance analysis into an inspectable visual w
 
 The public application runs as static files on GitHub Pages. It requires **no project-owned server, database, paid API, or embedded credential**.
 
+## Infographic guidebook
+
+<table>
+<tr>
+<td width="34%" align="center">
+  <a href="https://FaramarzKowsari.github.io/sql-visual-optimizer/guidebook/">
+    <img src="public/guidebook/inside-sql-visual-optimizer-cover.jpg" alt="Inside SQL Visual Optimizer infographic guidebook cover" width="300" />
+  </a>
+</td>
+<td>
+
+### Inside SQL Visual Optimizer
+
+**A Visual Guide to Query Planning, Cost Analysis, and SQL Performance**
+
+This ten-page infographic guidebook explains the repository from end to end: project purpose, core features, workflow, interface, architecture, deterministic analyzer, privacy and BYOK AI, deployment, research value, citation, and author information.
+
+- [Read the guidebook landing page](https://FaramarzKowsari.github.io/sql-visual-optimizer/guidebook/)
+- [Open or download the PDF](https://FaramarzKowsari.github.io/sql-visual-optimizer/guidebook/inside-sql-visual-optimizer.pdf)
+- [View the PDF inside the repository](public/guidebook/inside-sql-visual-optimizer.pdf)
+- [Guidebook documentation](docs/GUIDEBOOK.md)
+
+</td>
+</tr>
+</table>
+
 ## Canonical project links
 
 Use the following descriptive links when referencing this project from websites, academic profiles, books, or social posts:
 
 - [SQL Visual Optimizer — Interactive Query Planning and Performance Laboratory](https://faramarzkowsari.github.io/sql-visual-optimizer/)
 - [SQL Visual Optimizer source code and technical documentation](https://github.com/FaramarzKowsari/sql-visual-optimizer)
+- [Inside SQL Visual Optimizer — ten-page infographic guidebook](https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/)
+- [Inside SQL Visual Optimizer — direct PDF](https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/inside-sql-visual-optimizer.pdf)
 - [SQL Visual Optimizer v1.0.0 archived software release on Zenodo](https://doi.org/10.5281/zenodo.21501361)
 
 Avoid generic anchor text such as “Click here.” Consistent descriptive titles help readers and search systems understand the destination before opening it.
@@ -105,7 +135,7 @@ Do not submit confidential schemas or production queries to an external model wi
 ```text
 sql-visual-optimizer/
 ├── src/
-│   ├── components/          # visual interface
+│   ├── components/          # visual interface, including the guidebook viewer
 │   ├── data/                # query clinics
 │   ├── lib/
 │   │   ├── analyzer.ts      # deterministic analysis and plan model
@@ -116,7 +146,10 @@ sql-visual-optimizer/
 ├── examples/                # SQL and EXPLAIN fixtures
 ├── benchmarks/              # reproducibility requirements
 ├── docs/                    # architecture, methodology, research, roadmap
-├── public/llms.txt          # concise machine-readable project summary
+│   └── GUIDEBOOK.md         # guidebook paths, contents, and usage
+├── public/
+│   ├── guidebook/           # guidebook landing page, PDF, and cover preview
+│   └── llms.txt             # concise machine-readable project summary
 └── .github/workflows/       # CI and Pages deployment
 ```
 
@@ -126,6 +159,7 @@ The browser estimator is deliberately lightweight. It models scans, joins, filte
 
 Read:
 
+- [Infographic guidebook](docs/GUIDEBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Methodology and limitations](docs/METHODOLOGY.md)
 - [Research direction](docs/RESEARCH.md)
@@ -146,6 +180,7 @@ Read:
 - Official Website: https://FaramarzKowsari.github.io
 - Zenodo Records: https://zenodo.org/search?q=creators.orcid%3A%220000-0003-1692-0453%22&l=list&p=1&s=10&sort=bestmatch
 - Software DOI: https://doi.org/10.5281/zenodo.21501361
+- Project guidebook: https://FaramarzKowsari.github.io/sql-visual-optimizer/guidebook/
 
 ## Citation
 
