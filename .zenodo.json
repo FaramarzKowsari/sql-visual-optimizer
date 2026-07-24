@@ -1,6 +1,6 @@
 {
   "title": "SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory",
-  "description": "SQL Visual Optimizer is a browser-first research and educational software application for inspecting SQL structure, visualizing transparent estimated logical plans, importing PostgreSQL-compatible EXPLAIN JSON, identifying common SQL anti-patterns, and exploring index hypotheses. The deterministic analyzer works without a paid API or project-owned credential; optional natural-language explanations use a visitor-provided Gemini API key.",
+  "description": "SQL Visual Optimizer is a browser-first research and educational software application for inspecting SQL structure, visualizing transparent estimated logical plans, importing PostgreSQL-compatible EXPLAIN JSON, identifying common SQL anti-patterns, and exploring index hypotheses. Version 1.1.0 adds the official ten-page Inside SQL Visual Optimizer infographic guidebook, a dedicated guidebook landing page, an embedded PDF reader, expanded repository documentation, and improved discoverability metadata. The deterministic analyzer works without a paid API or project-owned credential; optional natural-language explanations use a visitor-provided Gemini API key.",
   "creators": [
     {
       "name": "Kowsari, Faramarz",
@@ -11,7 +11,7 @@
   "upload_type": "software",
   "access_right": "open",
   "license": "mit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "language": "eng",
   "keywords": [
     "SQL",
@@ -24,6 +24,7 @@
     "index analysis",
     "data engineering",
     "education technology",
+    "infographic guidebook",
     "TypeScript",
     "Rust",
     "WebAssembly"
@@ -40,10 +41,10 @@
       "resource_type": "other"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.21501361",
-      "relation": "isIdenticalTo",
-      "resource_type": "software"
+      "identifier": "https://faramarzkowsari.github.io/sql-visual-optimizer/guidebook/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-other"
     }
   ],
-  "notes": "Version 1.0.0 is the initial public research-software release. Archived version DOI: 10.5281/zenodo.21501361. The live application is deployed on GitHub Pages and the source code is licensed under MIT."
+  "notes": "Version 1.1.0 adds the official Inside SQL Visual Optimizer ten-page infographic guidebook, a dedicated guidebook landing page, an embedded PDF reader, expanded documentation, and improved search/discovery metadata. The live application is deployed on GitHub Pages and the source code is licensed under MIT."
 }

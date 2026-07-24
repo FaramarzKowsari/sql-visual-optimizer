@@ -1,25 +1,44 @@
-# راهنمای رفع خطای ImportMeta.env
+# راهنمای ساخت Release نسخه 1.1.0 و دریافت DOI جدید
 
-این بسته خطای زیر را رفع می‌کند:
+## 1. نصب فایل‌ها
 
-Property 'env' does not exist on type 'ImportMeta'
+محتویات این بسته را در ریشه مخزن محلی `sql-visual-optimizer` کپی کنید و فایل‌های موجود را Replace کنید.
 
-## فایل‌های بسته
+فایل‌های تغییرکرده:
+- `.zenodo.json`
+- `CITATION.cff`
+- `package.json`
 
-- `src/vite-env.d.ts`
-- `tsconfig.app.json`
+فایل جدید:
+- `docs/RELEASE_NOTES_v1.1.0.md`
 
-## نصب
+## 2. Commit
 
-1. محتویات بسته را در ریشه مخزن محلی `sql-visual-optimizer` کپی کنید.
-2. هنگام سؤال ویندوز، گزینه `Replace the files in the destination` را بزنید.
-3. در GitHub Desktop باید این تغییرات دیده شوند:
-   - `src/vite-env.d.ts` (فایل جدید)
-   - `tsconfig.app.json` (فایل اصلاح‌شده)
-4. Summary:
-   `Add Vite environment type declarations`
-5. Commit to main
-6. Push origin
+Summary:
+`Prepare v1.1.0 guidebook release metadata`
 
-بعد از Push، CI و Deploy GitHub Pages به صورت خودکار دوباره اجرا می‌شوند.
-اجرای قرمز قبلی را Re-run نکنید.
+Description:
+`Update software, citation, and Zenodo metadata for the official infographic guidebook release.`
+
+سپس:
+- Commit to main
+- Push origin
+- صبر کنید CI و Deploy GitHub Pages سبز شوند.
+
+## 3. ساخت GitHub Release
+
+- Tag: `v1.1.0`
+- Target: `main`
+- Title: `SQL Visual Optimizer v1.1.0 — Official Infographic Guidebook Release`
+- Description: تمام محتوای `docs/RELEASE_NOTES_v1.1.0.md`
+- Set as latest release: روشن
+- Pre-release: خاموش
+- Publish release
+
+## 4. دریافت DOI
+
+پس از پردازش Zenodo، یک Version DOI جدید برای v1.1.0 ظاهر می‌شود.
+شماره DOI جدید یا تصویر صفحه Zenodo را برای مرحله نهایی درج DOI در تمام فایل‌ها ارسال کنید.
+
+DOI نسخه v1.0.0 را حذف یا بازنویسی نکنید:
+`10.5281/zenodo.21501361`

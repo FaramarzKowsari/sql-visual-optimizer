@@ -6,14 +6,11 @@ authors:
   - family-names: Kowsari
     given-names: Faramarz
     orcid: "https://orcid.org/0000-0003-1692-0453"
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.21501361"
 repository-code: "https://github.com/FaramarzKowsari/sql-visual-optimizer"
 url: "https://FaramarzKowsari.github.io/sql-visual-optimizer/"
 license: MIT
-version: 1.0.0
-date-released: 2026-07-22
+version: 1.1.0
+date-released: 2026-07-23
 keywords:
   - SQL
   - query optimization
@@ -21,6 +18,7 @@ keywords:
   - execution plans
   - data engineering
   - education technology
+  - infographic guidebook
 preferred-citation:
   type: software
   title: "SQL Visual Optimizer: An Interactive Query Planning, Cost Analysis, and SQL Performance Laboratory"
@@ -28,7 +26,6 @@ preferred-citation:
     - family-names: Kowsari
       given-names: Faramarz
       orcid: "https://orcid.org/0000-0003-1692-0453"
-  version: 1.0.0
-  date-released: 2026-07-22
-  doi: "10.5281/zenodo.21501361"
-  url: "https://doi.org/10.5281/zenodo.21501361"
+  version: 1.1.0
+  date-released: 2026-07-23
+  url: "https://github.com/FaramarzKowsari/sql-visual-optimizer/releases/tag/v1.1.0"
